@@ -1,0 +1,14 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  # This name MUST match the name in the HelmRelease's sourceRef
+  name: fluxcd-gitops-repo
+  namespace: flux-system
+spec:
+  # The interval at which to check for repository updates
+  interval: 1m0s
+  # The git repository URL
+  url: https://github.com/gprashant2/fluxcd-gitops-repo
+  # The branch to checkout
+  ref:
+    branch: main
