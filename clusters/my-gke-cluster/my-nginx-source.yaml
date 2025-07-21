@@ -1,7 +1,8 @@
+# clusters/my-cluster/my-nginx-chart-source.yaml
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
-  name: flux-gke-demo
+  name: my-nginx
   namespace: flux-system
 spec:
   interval: 1m
