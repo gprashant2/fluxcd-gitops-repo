@@ -8,6 +8,7 @@ spec:
   chart:
     spec:
       chart: ./charts/my-nginx
+      reconcileStrategy: Revision
       sourceRef:
         kind: GitRepository
         name: fluxcd-gitops-repo
